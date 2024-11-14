@@ -14,12 +14,16 @@
     --p-font: 1rem;
 }
 
+
  .expresso{
     width: 50%;
-     height: auto;
+    height: auto;
     object-fit: cover;
     position: relative;
+     padding-right: 30px;
     z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
  body{
@@ -38,13 +42,19 @@
     z-index: 1000;
     align-items: center;
     background-color: var(--bg-color);
-    padding: 35px 7%;
+    padding: 0 14%;
     justify-content: space-between;
      transition:  all .50s ease;
  }
 
 .navlist{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    padding-right: 10%;
  }
 .navlist a {
     color:var(--main-color);
@@ -53,11 +63,9 @@
     position: relative;
     z-index: 1;
     transition: all .6s ease;
-
-
 }
 .navlist a:hover{
-    color: var(--main-color);
+    color: var(--text-color);
 }
 .nav-btn{
     display: inline-block;
@@ -87,7 +95,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 14%;
+    padding: 0 10%;
     min-height: 100vh;
 }
 
@@ -138,11 +146,12 @@ section .img{
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--main-color);
+    color: var(--text-color)
 }
 .price span{
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    margin-left: 10px;
+    color: var(--main-color);
 }
 
 .icons {
@@ -163,3 +172,230 @@ section .img{
 .icons i:hover{
     color: #ffffff;
 }
+.scroll-btn{
+    position: absolute;
+    top: 92%;
+    right: 7%;
+    transform: translateY(-50%);
+}
+
+.scroll-btn a{
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .6s ease;
+}
+.scroll-btn i{
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+@media(max-width: 1770px){
+    header{
+        padding: 22px 4%;
+    }
+    .icons{
+        padding: 0 4%;
+    }
+    .scroll-btn{
+        right: 4%;
+    }
+}
+@media(max-width: 1370px){
+    section{
+        padding: 0 4%;
+    }
+    .icons{
+        display: none;
+    }
+}
+@media(max-width: 1150px){
+    section .content h2{
+        font-size: 5.6rem;
+    }
+    section .content p{
+        font-size: 1rem;
+    }
+    section .content .btn{
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    .price{
+        font-size: 1.2rem;
+    }
+    .price span{
+        font-size: 1.2rem;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .expresso{
+        padding-right: 20px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 950px) {
+    header{
+        padding: 20px 10%;
+        justify-content: space-between;
+    }
+    .expresso{
+        padding-right: 0;
+        width: 70%;
+    }
+    #menu-icon{
+        display: block;
+    }
+
+    .nav-btn {
+        margin-right: 150px; /* Adiciona margem à direita do botão */
+    }
+    .right-content {
+        display: flex;
+        align-items: center;
+    }
+    .navlist{
+        position: absolute;
+         top: 0;
+        right: 0;
+        padding: 100px 50px;
+        height: 100vh;
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        backdrop-filter: blur(32px);
+        transition: all .6s ease;
+    }
+    .navlist a{
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 720px) {
+    section .content h1{
+        font-size: 1.5rem;
+    }
+    section .content p{
+        font-size: 0.8rem;
+    }
+    section .content .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .price{
+        font-size: 1.0rem;
+    }
+    .price span{
+        font-size: 1.0rem;
+    }
+    .btn{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .expresso{
+        padding-right: 20px;
+        width: 70%;
+    }
+    .expresso2{
+        padding-right: 450px;
+        width: 1%;
+    }
+}
+@media (max-width: 641px) {
+    section {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    section .content {
+        width: 100%;
+    }
+    section .content h1 {
+        font-size: 1.3rem;
+    }
+    section .content p {
+        font-size: 0.8rem;
+    }
+    .nav-btn {
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px  30px;
+    }
+    section .content .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .price {
+        font-size: 1.0rem;
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .price span {
+        font-size: 1.0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .btn {
+        padding: 15px 25px;
+        font-size: 20px;
+    }
+    .expresso {
+        padding-right: 20px;
+        width: 80%;
+    }
+    .expresso2 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 520px) {
+    header {
+        padding: 20px 5%;
+    }
+    .nav-btn {
+        margin-right: 0;
+    }
+    .navlist {
+        padding: 100px 20px;
+    }
+    .navlist a {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+    .nav-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .price {
+        font-size: 1.0rem;
+    }
+    .price span {
+        font-size: 1.0rem;
+    }
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .expresso {
+        padding-right: 20px;
+        width: 80%;
+    }
+    .expresso2 {
+        display: none;
+    }
+}
+
+
