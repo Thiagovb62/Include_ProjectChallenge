@@ -260,22 +260,26 @@ section .img{
     }
     .navlist{
         position: absolute;
-         top: 0;
+        top: 0;
         right: 0;
         padding: 100px 50px;
         height: 100vh;
+        bottom: 0;
         width: 100%;
-        display: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
         flex-direction: column;
         backdrop-filter: blur(32px);
         transition: all .6s ease;
     }
     .navlist a{
+        display: block;
         font-size: 2rem;
         margin: 20px 0;
     }
     .navlist.open{
-        right: 0;
+        left: 0;
     }
 }
 @media (max-width: 720px) {
