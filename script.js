@@ -1,7 +1,6 @@
 let menu = document.querySelector('#menu-icon');
 let navlist = document.querySelector('.navlist');
 
-navlist.style.display = navlist.style.display === 'none' ? 'flex' : 'none';
 function toggleNavList() {
     if (window.innerWidth < 950) {
         navlist.style.display = navlist.style.display === 'none' ? 'flex' : 'none';
