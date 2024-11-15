@@ -331,6 +331,44 @@ section .img{
     background-color: #9c7b4c;
 }
 
+/* Seção Sobre */
+.about {
+    background-color: #2e4a3d;
+    color: #ae8957;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about .section-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Texto da Seção Sobre */
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: left;
+}
+
+/* Imagem da Seção Sobre */
+.about-image img {
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 @media (max-width: 950px) {
     header{
@@ -463,12 +501,7 @@ section .img{
         width: 80%;
     }
     .expresso2 {
-        display: block;
-        width: 5%;
-        padding-right: 0;
-        padding-top: 1000px;
-        position: absolute;
-        left: 5%;
+        display: none;
     }
     .scroll-btn {
         display: none;
@@ -508,16 +541,9 @@ section .img{
         width: 80%;
         padding-right: 0;
         display: flex;
-
-
     }
     .expresso2 {
-        display: flex;
-        width: 5%;
-        padding-right: 0;
-        padding-top: 1000px;
-        position: absolute;
-        right: 90%;
+       display: none;
     }
     .scroll-btn {
         display: none;
