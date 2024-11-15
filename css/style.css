@@ -287,6 +287,11 @@ section .img{
         left: 0;
 
     }
+    .expresso2{
+        width: 5%;
+        padding-right: 450px;
+        padding-top: 100px;
+    }
 }
 @media (max-width: 720px) {
     section .content h1{
@@ -319,6 +324,9 @@ section .img{
     }
 }
 @media (max-width: 641px) {
+    header {
+        padding: 20px 5%;
+    }
     section {
         display: flex;
         align-items: center;
@@ -335,9 +343,8 @@ section .img{
     }
     .nav-btn {
       display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px  30px;
+
+        margin-left: 50px;
     }
     section .content .btn {
         padding: 10px 20px;
@@ -362,11 +369,17 @@ section .img{
         font-size: 20px;
     }
     .expresso {
-        padding-right: 20px;
+        padding-right: 10px;
+        margin-right: 20px ;
         width: 80%;
     }
     .expresso2 {
-        display: none;
+        display: block;
+        width: 5%;
+        padding-right: 0;
+        padding-top: 1000px;
+        position: absolute;
+        left: 5%;
     }
 
 }
@@ -404,6 +417,14 @@ section .img{
         width: 80%;
     }
     .expresso2 {
+        display: flex;
+        width: 5%;
+        padding-right: 0;
+        padding-top: 1000px;
+        position: absolute;
+        left: 5%;
+    }
+    .scroll-btn {
         display: none;
     }
 }
