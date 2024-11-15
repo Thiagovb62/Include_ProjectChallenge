@@ -236,8 +236,9 @@ section .img{
         width: 100%;
     }
     .expresso2{
-        width: 10%;
+        width: 5%;
         padding-right: 450px;
+        padding-top: 100px;
     }
 
 }
