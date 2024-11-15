@@ -235,6 +235,10 @@ section .img{
         padding-right: 20px;
         width: 100%;
     }
+    .expresso2{
+        width: 10%;
+        padding-right: 450px;
+    }
 
 }
 
@@ -280,6 +284,7 @@ section .img{
     }
     .navlist.open{
         left: 0;
+
     }
 }
 @media (max-width: 720px) {
