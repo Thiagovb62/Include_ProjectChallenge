@@ -243,6 +243,95 @@ section .img{
 
 }
 
+
+.plans {
+    background-color: #2e4a3d;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+
+.plans .section-title {
+    color: #ae8957;
+    font-family: 'Cinzel', serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.card {
+    background-color: #fff;
+    color: #2e4a3d;
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Título do Plano */
+.plan-title {
+    font-size: 1.8rem;
+    color: #ae8957;
+    margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
+}
+
+/* Descrição */
+.plan-description {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Lista de Benefícios */
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.plan-features li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #2e4a3d;
+}
+
+/* Botão de Assinar */
+.btn-plan {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #ae8957;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn-plan:hover {
+    background-color: #9c7b4c;
+}
+
+
 @media (max-width: 950px) {
     header{
         padding: 20px 10%;
